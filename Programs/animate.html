@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> /* embedded CSS */
+        * {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 5px;
+        }
+
+        body {
+            background-color: bisque;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes slidebutton {
+            0%{transform: translateX(-100%);}
+            100% {transform: translateX(0%);}
+
+        }
+
+        .fade-in-element {
+            animation: fadeIn 5s ease-out;
+            background-color: darkseagreen;
+            border: 1px solid;
+            border-radius: 12px;
+        }
+        .buttonslide{
+            animation: slidebutton 3s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>@keyframes demo</h1>
+    <div class="fade-in-element">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam similique soluta quisquam fugiat
+            praesentium. Aut perspiciatis, a est recusandae quisquam voluptate cupiditate eaque, ratione modi at eos
+            molestias optio. Repellat.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam similique soluta quisquam fugiat
+            praesentium. Aut perspiciatis, a est recusandae quisquam voluptate cupiditate eaque, ratione modi at eos
+            molestias optio. Repellat.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam similique soluta quisquam fugiat
+            praesentium. Aut perspiciatis, a est recusandae quisquam voluptate cupiditate eaque, ratione modi at eos
+            molestias optio. Repellat.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam similique soluta quisquam fugiat
+            praesentium. Aut perspiciatis, a est recusandae quisquam voluptate cupiditate eaque, ratione modi at eos
+            molestias optio. Repellat.
+        </p>
+    </div>
+    <button class="buttonslide">Click here!</button>
+</body>
+
+</html>
